@@ -264,12 +264,12 @@ h3 {
   color: white;
   cursor: pointer;
   
-  /* Give it a fixed width and height to ensure a perfect circle */
+  
   width: 50px;
   height: 50px;
   border-radius: 50%;
   transform: rotate(-90deg);
-  /* Flexbox centering tools */
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,12 +279,12 @@ h3 {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Rotate ONLY the span holding the arrow inside the button */
+
 #scrollToTopBtn span {
   display: inline-block;
   transform: rotate(-90deg);
   font-size: 18px;
-  line-height: 1; /* Prevents text line-height from pushing it down */
+  line-height: 1; 
 }
 
 #scrollToTopBtn.show {

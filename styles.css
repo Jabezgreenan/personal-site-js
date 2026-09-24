@@ -1,0 +1,287 @@
+*, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #1D1D1F;
+}
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    
+    
+}
+header  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 30px;
+    
+}
+
+header  nav a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    transition:  0.2s ease;
+
+}
+
+.links li > a:hover {
+    color: #1a85ff;
+    
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    gap: 2em;
+    
+}
+
+.panel {
+    height: 100vh;
+   
+}
+
+.name {
+    
+    margin-bottom: -1rem; 
+    
+}
+
+.title {
+    color: #0066CC;
+    font-size: 2rem;
+    
+}
+
+section{ 
+    width: 800px;
+    margin: 0px auto;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    margin-bottom: 100px;
+    
+}
+
+.project {
+    display: flex;
+    
+}
+
+.project-content {
+    
+    margin-right: 5rem;
+}
+
+.card{
+    display: flex;
+
+}
+
+.btn {
+    padding: 8px 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #0066CC;
+    text-decoration: none;
+    color: white;
+    border: unset;
+    transition:  0.2s ease;
+}
+
+.btn:hover{
+    background-color: #1a85ff;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    margin: 10rem auto;
+
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    
+}
+
+.contact-content a{
+    margin-top: 2rem;
+
+    
+}
+
+
+footer {
+    padding: 12px 30px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer nav > ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+
+.footer-icons svg {
+    width: 30px;
+    
+    transition: fill 0.2s ease; 
+}
+
+.footer-icons svg path {
+    fill: inherit;
+}
+
+.footer-icons a:hover svg {
+    cursor: pointer;
+    fill: #1a85ff;
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+.link-buttons .git-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin-left: 1rem;
+}
+
+
+.link-buttons .git-icon svg {
+    width: 24px;      
+    height: auto;
+    transition: fill 0.2s ease;
+    transition:  0.2s ease;
+}
+
+
+.link-buttons .git-icon:hover svg path {
+    
+    cursor: pointer;
+    fill: #1a85ff ;
+}
+
+.project-description {
+    margin: 2rem auto;
+}
+
+.link-buttons {
+    margin-top: 2rem;
+}
+
+.stack{
+    margin-left: 20px;
+}
+
+.preview {
+    height: 400px;
+    object-fit: cover;
+    width: 300px;
+    box-shadow: 3px 3px 20px 0px #1D1D1F;
+}
+
+.about-content {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.about-me h2 {
+    margin-bottom: 1rem;
+}
+
+
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  
+  /* Give it a fixed width and height to ensure a perfect circle */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  /* Flexbox centering tools */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Rotate ONLY the span holding the arrow inside the button */
+#scrollToTopBtn span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 18px;
+  line-height: 1; /* Prevents text line-height from pushing it down */
+}
+
+#scrollToTopBtn.show {
+  opacity: 1;
+  pointer-events: auto;
+}

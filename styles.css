@@ -27,39 +27,41 @@ body {
 }
 
 
-.shape {
+.icon {
   position: absolute;
-  opacity: .5; 
+  opacity: .8; 
   animation: leftToRight linear infinite; 
 }
 
 
-.circle {
-  width: 120px;
-  height: 120px;
-  background-color: #38bdf8; 
-  border-radius: 50%;
-  top: 15%; 
-  animation-duration: 14s; 
-}
-
-.square {
+.javascript {
   width: 90px;
   height: 90px;
-  background-color: #ec4899;
-  border-radius: 12px;
-  top: 50%;
-  animation-duration: 20s;
+  top: 15%; 
+  animation-duration: 6s; 
+}
+
+.react {
+  width: 90px;
+  height: 90px;
+  top: 73%;
+  animation-duration: 11s;
   animation-delay: -5s; 
 }
 
-.blob {
-  width: 150px;
-  height: 150px;
-  background-color: #a855f7; 
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 5s; 
-  top: 75%;
-  animation-duration: 16s;
+.html {
+  width: 90px;
+  height: 90px;
+  top: 85%;
+  animation-duration: 9s;
+  animation-delay: -2s;
+}
+
+.css {
+  width: 90px;
+  height: 90px;
+  top: 30%;
+  animation-duration: 8s;
   animation-delay: -2s;
 }
 
@@ -74,6 +76,7 @@ body {
     transform: translateX(100vw) rotate(360deg);
   }
 }
+
 
 header{
     
